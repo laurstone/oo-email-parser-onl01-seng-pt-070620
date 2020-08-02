@@ -13,7 +13,7 @@ class EmailAddressParser
     if @emails.include?(",")
       @emails.split.uniq(/, | /)
     else !@emails.include?(",")
-      @emails.split.unique 
+      @emails.split.uniq 
     end 
  end
 

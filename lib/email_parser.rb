@@ -4,6 +4,7 @@
 # or whitespace (' ').
 class EmailAddressParser
   
-  def email_addresses = "john@doe.com, person@somewhere.org"
+  def email_addresses
+    
  end
 end 

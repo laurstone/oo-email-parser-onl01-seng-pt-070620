@@ -15,7 +15,7 @@ class EmailAddressParser
     elsif !@emails.include?(",")
       @emails.split 
     else 
-      emails.parse 
+      @emails.parse 
     end 
  end
 

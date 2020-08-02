@@ -11,7 +11,8 @@ class EmailAddressParser
     
   def parse 
     if @emails.include?(",")
-      return
+      @emails.split(/,\s/)
+    else @emails.include?
     
  end
 end 

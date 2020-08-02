@@ -9,7 +9,9 @@ class EmailAddressParser
     @emails = emails
   end 
     
-  def  
+  def parse 
+    if @emails.include?(",")
+      return
     
  end
 end 

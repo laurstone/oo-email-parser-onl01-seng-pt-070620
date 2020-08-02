@@ -12,10 +12,10 @@ class EmailAddressParser
   def parse 
     if @emails.include?(",")
       @emails.split(/, | /)
-    else !@emails.include?(",")
+    elsif !@emails.include?(",")
       @emails.split 
+    else @emails.include?
     end 
  end
- 
- def delete 
+
 end 

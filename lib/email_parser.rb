@@ -16,4 +16,6 @@ class EmailAddressParser
       @emails.split 
     end 
  end
+ 
+ def delete 
 end 

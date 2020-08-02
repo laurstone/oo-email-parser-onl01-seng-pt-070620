@@ -15,7 +15,7 @@ class EmailAddressParser
     elsif !@emails.include?(",")
       @emails.split 
     else @emails.include?(",")
-     EmailAddressParser.uniq(:emails)
+     @emails.uniq(:emails)
     end 
  end
 

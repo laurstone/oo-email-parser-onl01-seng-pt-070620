@@ -14,7 +14,7 @@ class EmailAddressParser
       @emails.split(/, | /)
       @emails.uniq(:emails)
     else !@emails.include?(",")
-      @emails.split
+      @emails.split.uniq(:emails)
       @emails.uniq(:emails)
     end 
  end

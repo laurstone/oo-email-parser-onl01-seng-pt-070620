@@ -9,13 +9,13 @@ class EmailAddressParser
     @emails = emails
   end 
     
-  def parse(emails) 
+  def parse 
     if @emails.include?(",")
       @emails.split(/, | /)
     elsif !@emails.include?(",")
       @emails.split 
     else @emails.include?(",")
-     @emails.uniq(:emails)
+     EmailAddressParser.uniq(:emails)
     end 
  end
 
